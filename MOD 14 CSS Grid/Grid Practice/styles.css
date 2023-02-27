@@ -1,0 +1,53 @@
+.container {
+  margin: 20px;
+  display: grid;
+  height: 500px;
+  /* grid-template-columns: 200px 150px 25% 1fr; */
+  grid-template-columns: repeat(4, [column-start] 25% [column-end]);
+  /* grid-template-rows: 200px 5rem; */
+  grid-template-rows: [row1start] 2rem [row1end row2start] minmax(20px, 100px) [row2end row3start] 5rem [row3end];
+  /* grid-row-gap: 20px;
+  grid-column-gap: 20px; */
+  grid-gap: 20px;
+  grid-template-areas:
+    "h h h h"
+    ". . s s"
+    "f f f f";
+    /* justify-items: center; */
+    /* justify-items: start; */
+    /* justify-items: end; */
+    /* justify-items: stretch; */
+    /* align-items: center; */
+    /* align-items: start; */
+    /* align-items: end; */
+    /* align-items: stretch; */
+    justify-content: center;
+    align-content: center;
+}
+
+.el1 {
+  background: rgba(255, 154, 72, 0.5);
+}
+
+.el2 {
+  background: rgba(255, 0, 0, 0.5);
+  /* grid-column-start: 1; */
+  /* grid-column: 1 / -1; */
+  /* grid-column-end: span 1; */
+  grid-area: h;
+}
+
+.el3 {
+  background: rgba(0, 128, 0, 0.5);
+  /* grid-column-start: 2;
+  grid-column-end: span 3;
+  grid-row-start: row1start;
+  grid-row-end: row3end; */
+  /* grid-area: row1start / 2 / row3end / span 3; */
+  grid-area: s;
+}
+
+.el4 {
+  background: rgba(0, 4, 255, 0.5);
+  grid-area: f;
+}

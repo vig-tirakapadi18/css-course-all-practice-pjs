@@ -1,0 +1,33 @@
+body {
+  margin: 20px;
+  background-color: #e1b557;
+  height: 100%;
+  border: 5px solid whitesmoke;
+}
+.parent {
+  background-color: rgb(182, 181, 181);
+  margin: 16px;
+  padding: 16px;
+  border: 5px solid white;
+  /* overflow: hidden; */
+}
+.parent div {
+  background-color: rgb(105, 105, 109);
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
+}
+#child-one {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+.child-two {
+  position: relative;
+  top: 200px;
+  left: -50px;
+}

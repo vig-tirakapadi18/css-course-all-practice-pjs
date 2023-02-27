@@ -1,0 +1,26 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#instructions {
+  color: brown;
+  font-family: 'Courier New', Courier, monospace;
+}
+code {
+  color: red;
+  font-family: 'monospace';
+}
+.li-2 {
+  color: greenyellow;
+}
+#ol {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* li + li {
+  background-color: gray;
+  color: white;
+} */
+ol > li {
+  background-color: gray;
+  color: white;
+}

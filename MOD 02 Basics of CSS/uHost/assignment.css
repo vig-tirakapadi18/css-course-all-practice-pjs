@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.div-one {
+  padding: 20px 30px 40px 50px;
+  margin: 15px 20px 25px 30px;
+  /* padding: 24px 48px; */
+  /* margin: 15px; */
+  background-color: chartreuse;
+  border: 2px solid black;
+  height: 300px;
+  /* height: 100%; */
+  width: 40%;
+  display: inline-block;
+  margin: 0;
+}
+.div-one:hover {
+  background-color: coral;
+}
+#box-one {
+  display: none;
+}

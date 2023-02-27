@@ -1,0 +1,22 @@
+.container {
+  margin: 150px auto;
+  border: 2px solid black;
+  color: whitesmoke;
+  width: 200px;
+  height: 200px;
+  perspective: ;
+}
+
+.box {
+  background: darkslategrey;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  transform: perspective(1rem) rotateX(20deg) rotateY(20deg);
+  /* transform: rotateX(70deg); */
+  /* transform: rotateY(70deg); */
+  /* transform: rotateZ(70deg); */
+  /* box-shadow: 5px 5px 20px salmon; */
+}
